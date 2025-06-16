@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner-Friendly Landing Page</title>
+    <meta name="description" content="A modern, responsive landing page built for learning web development fundamentals">
+    
+    <!-- Google Fonts - Modern, readable typography -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    
+    <!-- Lucide Icons for beautiful, consistent iconography -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Our custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar - Optional simple nav -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>DevLanding</h2>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION - Main landing area with headline and CTA -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Main headline - should be compelling and clear -->
+                <h1 class="hero-title">
+                    Build Amazing Web Experiences
+                    <span class="highlight">From Scratch</span>
+                </h1>
+                
+                <!-- Supporting subheading - explains the value proposition -->
+                <p class="hero-subtitle">
+                    Learn modern web development with hands-on projects, clean code practices, 
+                    and industry-standard tools. Perfect for beginners starting their coding journey.
+                </p>
+                
+                <!-- Call-to-action buttons - primary and secondary actions -->
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="primaryCta">
+                        Get Started Free
+                    </button>
+                    <button class="btn btn-secondary">
+                        View Examples
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION - Showcase main benefits/features -->
+    <section class="features" id="features">
+        <div class="container">
+            <!-- Section header -->
+            <div class="section-header">
+                <h2>Why Choose Our Platform?</h2>
+                <p>Everything you need to start building professional websites</p>
+            </div>
+            
+            <!-- Features grid - 3 columns showcasing key benefits -->
+            <div class="features-grid">
+                <!-- Feature 1: Easy to Learn -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h3>Easy to Learn</h3>
+                    <p>Step-by-step tutorials and comprehensive documentation make learning web development accessible for everyone.</p>
+                </div>
+                
+                <!-- Feature 2: Modern Tools -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <h3>Modern Tools</h3>
+                    <p>Work with the latest technologies and frameworks used by professional developers in the industry.</p>
+                </div>
+                
+                <!-- Feature 3: Community Support -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3>Community Support</h3>
+                    <p>Join a thriving community of learners and experienced developers ready to help you succeed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION - Form for user inquiries -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions? We'd love to hear from you!</p>
+            </div>
+            
+            <!-- Contact form - collects basic user information -->
+            <div class="contact-form-container">
+                <form class="contact-form" id="contactForm">
+                    <!-- Name input field -->
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required 
+                            placeholder="Enter your full name"
+                        >
+                    </div>
+                    
+                    <!-- Email input field -->
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            placeholder="Enter your email address"
+                        >
+                    </div>
+                    
+                    <!-- Message textarea field -->
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5" 
+                            required 
+                            placeholder="Tell us about your project or ask any questions..."
+                        ></textarea>
+                    </div>
+                    
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER - Social links and additional information -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company/Brand information -->
+                <div class="footer-info">
+                    <h3>DevLanding</h3>
+                    <p>Building the future of web development education.</p>
+                </div>
+                
+                <!-- Social media links -->
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <!-- GitHub link -->
+                        <a href="https://github.com/tu-lasizzzz" target="_blank" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        
+                        <!-- LinkedIn link -->
+                        <a href="https://www.linkedin.com/in/tulasi-sahu/" target="_blank" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        
+                        <!-- Email link -->
+                        <a href="mailto:tulasisahu20@gmail.com" aria-label="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright information -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 DevLanding. Built with ❤️ for learning.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript file for interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
